@@ -54,9 +54,6 @@ class Game_Box:
         Nấp hộp
         
         Nếu trái cây chạm vào nấp hộp thì trò chơi sẽ kết thúc.
-        
-        Args:
-            body:
         """
         
         def __init__(self):
