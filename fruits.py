@@ -8,7 +8,7 @@ SCALING_FACTOR = 1.22
 
 class Fruit:
     """
-    Class trái cây của trò chơi
+    Class trái cây của trò chơi.
     
     Attributes:
         type (int): Loại trái cây từ 0 -> 10.
@@ -17,7 +17,7 @@ class Fruit:
     """
     
     def __init__(self, type: int):
-        if(type < 0 or type > 10):
+        if not 0 <= type <= 10:
             raise ValueError(f"Invalid type: {type}");
       
         radius = 15 * pow(SCALING_FACTOR, type)

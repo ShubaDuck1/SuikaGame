@@ -3,15 +3,15 @@ from pygame import Color;
 
 class Game_Box:
     """
-    Hộp chứa trái cây
+    Hộp chứa trái cây.
 
-    Mình có thể thay đổi các giá trị của hộp tại đây
+    Mình có thể thay đổi các giá trị của hộp tại đây.
 
     Attributes:
-        W_LENGTH (int): Độ dài tường ở 2 bên
+        W_LENGTH (int): Độ dài tường ở 2 bên.
         F_LENGTH (int): Độ dài tường ở trên, dưới
-        W_WIDTH (int): Độ dày của tường
-        lid (Lid): Nấp hộp
+        W_WIDTH (int): Độ dày của tường.
+        lid (Lid): Nấp hộp.
     """
     
     W_LENGTH = 500;
@@ -20,7 +20,7 @@ class Game_Box:
     
     def __init__(self, space: Space, width:int = 1080, height: int = 720):
         """
-        Khi khởi tạo sẽ thêm các tường vào không gian trò chơi
+        Khi khởi tạo sẽ thêm các tường vào không gian trò chơi.
         """
         
         rect = [
@@ -51,9 +51,13 @@ class Game_Box:
     
     class Lid:
         """
-        Nấp hộp
-        
+        Nấp hộp.
+
         Nếu trái cây chạm vào nấp hộp thì trò chơi sẽ kết thúc.
+        
+        Attributes:
+            body (Body): cơ thể vật lí.
+            shape (Shape): Hình dạng vật lí.
         """
         
         def __init__(self):
